@@ -61,6 +61,12 @@ The bash script `git-add-commit-push-all-in-one.sh` simplifies the process of ad
     ./git-add-commit-push-all-in-one.sh
     ```
 
+    To run the script without emojis in commit messages:
+
+    ```bash
+    ./git-add-commit-push-all-in-one.sh --no-emoji
+    ```
+
 ### Windows
 
 1. Open Git Bash.
@@ -81,6 +87,12 @@ The bash script `git-add-commit-push-all-in-one.sh` simplifies the process of ad
 
     ```bash
     ./git-add-commit-push-all-in-one.sh
+    ```
+
+    To run the script without emojis in commit messages:
+
+    ```bash
+    ./git-add-commit-push-all-in-one.sh --no-emoji
     ```
 
 ## Usage
