@@ -101,7 +101,7 @@ git perf "improve performance"          # git commit -m "⚡ perf: improve perfo
 git test "add tests"                    # git commit -m "✅ tests: add tests"
 git chore "update dependencies"         # git commit -m "🔧 chore: update dependencies"
 git build "run build"                   # git commit -m "🛠️ build: run build"
-git ci "update CI configuration"        # git commit -m "👷ci: update CI configuration"
+git ci "update CI configuration"        # git commit -m "👷 ci: update CI configuration"
 ```
 
 ## Contributing
