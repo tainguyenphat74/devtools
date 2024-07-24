@@ -13,7 +13,7 @@ set_git_alias() {
   
   git config --global alias.$alias_name "!f() { 
     git add -A && 
-    git commit -m \"$commit_prefix: \$1\" && 
+    git commit -m \"$commit_prefix \$1\" && 
     branch=\$(git symbolic-ref --short HEAD) && 
     upstream=\$(git for-each-ref --format='%(upstream:short)' refs/heads/\$branch) && 
     if [ -z \"\$upstream\" ]; then 
@@ -36,15 +36,15 @@ do
 done
 
 # Setting up aliases
-set_git_alias "feat" "✨ feat" $USE_EMOJI
-set_git_alias "fix" "🐛 fix" $USE_EMOJI
-set_git_alias "docs" "📚 docs" $USE_EMOJI
-set_git_alias "style" "💄 style" $USE_EMOJI
-set_git_alias "refactor" "♻️ refactor" $USE_EMOJI
-set_git_alias "perf" "⚡ perf" $USE_EMOJI
-set_git_alias "test" "✅ test" $USE_EMOJI
-set_git_alias "chore" "🔧 chore" $USE_EMOJI
-set_git_alias "build" "🛠️ build" $USE_EMOJI
-set_git_alias "ci" "👷 ci" $USE_EMOJI
+set_git_alias "feat" "✨" $USE_EMOJI
+set_git_alias "fix" "🐛" $USE_EMOJI
+set_git_alias "docs" "📚" $USE_EMOJI
+set_git_alias "style" "💄" $USE_EMOJI
+set_git_alias "refactor" "♻️" $USE_EMOJI
+set_git_alias "perf" "⚡" $USE_EMOJI
+set_git_alias "test" "✅" $USE_EMOJI
+set_git_alias "chore" "🔧" $USE_EMOJI
+set_git_alias "build" "🛠️" $USE_EMOJI
+set_git_alias "ci" "👷" $USE_EMOJI
 
 echo "Git aliases have been set up successfully."
