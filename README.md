@@ -40,35 +40,6 @@ This repository includes a bash script to automate the process of adding, commit
 ## Running the Bash Script
 The bash script `git-add-commit-push-all-in-one.sh` simplifies the process of adding, committing, and pushing changes to your Git repository.
 
-### Linux and macOS
-1. Open your terminal.
-
-2. Navigate to the directory where the script is located:
-
-    ```bash
-    cd path/to/devtools
-    ```
-
-3. Ensure the script has execution permissions:
-
-    ```bash
-    chmod +x git-add-commit-push-all-in-one.sh
-    ```
-
-4. Run the script:
-
-    ```bash
-    ./git-add-commit-push-all-in-one.sh
-    ```
-
-    To run the script without emojis in commit messages:
-
-    ```bash
-    ./git-add-commit-push-all-in-one.sh --no-emoji
-    ```
-
-### Windows
-
 1. Open Git Bash.
 
 2. Navigate to the directory where the script is located:
@@ -100,20 +71,20 @@ The bash script `git-add-commit-push-all-in-one.sh` simplifies the process of ad
 To use the script, run it with the desired `commit type` and `message`, it will automatically add, commit, and push to the remote branch. Here are some examples:
 
 ```bash
-# When you type this command, it equivalent to: git add -A && git commit -m "✨ feat: implement new feature" && git push
+# When you type this command, it equivalent to: git add -A && git commit -m "✨ implement new feature" && git push
 git feat "implement new feature"
 ```
 Similar example:
 ```bash
-git fix "fix bug"                       # git commit -m "🐛 fix: fix bug"
-git docs "update documentation"         # git commit -m "📚 docs: update documentation"
-git style "format code"                 # git commit -m "💄 style: format code"
-git refactor "refactor code"            # git commit -m "♻️ refactor: refactor code"
-git perf "improve performance"          # git commit -m "⚡ perf: improve performance"
-git test "add tests"                    # git commit -m "✅ tests: add tests"
-git chore "update dependencies"         # git commit -m "🔧 chore: update dependencies"
-git build "run build"                   # git commit -m "🛠️ build: run build"
-git ci "update CI configuration"        # git commit -m "👷 ci: update CI configuration"
+git fix "fix bug"                       # git commit -m "🐛 fix bug"
+git docs "update documentation"         # git commit -m "📚 update documentation"
+git style "format code"                 # git commit -m "💄 format code"
+git refactor "refactor code"            # git commit -m "♻️ refactor code"
+git perf "improve performance"          # git commit -m "⚡ improve performance"
+git test "add tests"                    # git commit -m "✅ add tests"
+git chore "update dependencies"         # git commit -m "🔧 update dependencies"
+git build "run build"                   # git commit -m "🛠️ run build"
+git ci "update CI configuration"        # git commit -m "👷 update CI configuration"
 ```
 
 ## Contributing
